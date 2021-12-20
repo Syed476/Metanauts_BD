@@ -16,11 +16,11 @@ object MainObject{
     for(line<-fileSource.getLines){
       //println(line)
       var str : String = line
-      val trimmedList: List[String] = str.split(" ").map(_.trim).toList
+      val trimmedList: List[String] = str.split("[;:.,? ]").map(_.trim).toList
       finalList = List.concat(finalList, trimmedList)
-
+      //println (finalList)
     }
-    println (finalList)
+    //println (finalList)
     println(element_occurrences(finalList))
     fileSource.close()
   }
