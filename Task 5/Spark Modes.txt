@@ -1,0 +1,13 @@
+Spark Modes
+
+Client Mode
+The behaviour of spark job depends on the “driver” component. So “driver” component of spark job will run on the machine from which job is submitted. Hence, this spark mode is basically “client mode”.
+
+Cluster Mode
+Here “driver” component of spark job will not run on the local machine from which job is submitted. Hence, this spark mode is basically “cluster mode”. In addition to this, here spark job will launch “driver” component inside the cluster.
+
+Local Mode
+Local Mode also known as Spark in-process is the default mode of spark. It does not require any resource manager. It runs everything on the same computer. Because of local mode, we can simply download spark and run without having to install any resource manager.
+
+Standalone Mode
+In this mode we realized that we run our Master and worker nodes on our local machine. Spark distribution comes with its own resource manager also. When our program uses spark's resource manager, execution mode is called Standalone in our local machine.
