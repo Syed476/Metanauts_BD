@@ -15,6 +15,5 @@ print ("="*30)
 
 results1=collection.find({"cities.population":151})
 print(results1)
-
 for el in results1:
     print(el)
